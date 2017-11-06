@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <!--<com.pili.pldroid.player.widget.PLVideoTextureView-->
+    <!--android:id="@+id/ijkVideoView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:visibility="gone" />-->
+    <android.player.ijk.widget.media.IjkVideoView
+        android:id="@+id/video_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+        <veg.mediaplayer.sdk.MediaPlayer
+            android:id="@+id/vxgplayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center" />
+
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#0099cc">-->
+
+    <!-- -->
+
+    <!--<TextView-->
+    <!--android:id="@+id/toast_text_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="left|center_vertical"-->
+    <!--android:background="@color/ijk_transparent_dark"-->
+    <!--android:padding="16dp"-->
+    <!--android:textSize="16sp"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TableLayout-->
+    <!--android:id="@+id/hud_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right|center_vertical"-->
+    <!--android:background="@color/ijk_transparent_dark"-->
+    <!--android:padding="8dp" />-->
+
+    <!--</FrameLayout>-->
+
+    <android.androidVNC.VncCanvas
+        android:id="@+id/vnc_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent" />
+
+    <CheckBox
+        android:id="@+id/full_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/full_screen_selector"
+        android:visibility="gone" />
+
+    <com.antlersoft.util.ZoomControls
+        android:id="@+id/zoomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/LoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:indeterminate="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="loading..."
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

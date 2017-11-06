@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.pili.pldroid.playerdemo"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 7
+        versionName "1.4.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/pldroid-player-1.4.1.jar')
+    compile 'com.android.support:appcompat-v7:23+'
+    compile files('libs/happy-dns-0.2.11.jar')
+    compile(name: 'pili-android-qos-0.8.17', ext: 'aar')
+
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\debug\\raw\\info.txt",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\raw\\info.txt"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\debug\\raw\\legal.txt",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\raw\\legal.txt"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\debug\\raw\\opensource.txt",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\raw\\opensource.txt"
+    }
+]

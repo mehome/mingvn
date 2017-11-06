@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\menu_player.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\menu\\menu_player.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\vnccanvasactivitymenu.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\menu\\vnccanvasactivitymenu.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\menu_app.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\menu\\menu_app.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\metakeymenu.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\menu\\metakeymenu.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\androidvncmenu.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\menu\\androidvncmenu.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\menu.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\menu\\intro_dialog_menu.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\menu\\intro_dialog_menu.xml"
+    }
+]

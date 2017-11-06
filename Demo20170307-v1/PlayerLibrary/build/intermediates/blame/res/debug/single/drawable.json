@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_forward_w.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\ic_forward_w.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_backward_w.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\ic_backward_w.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\po_seekbar.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\po_seekbar.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\seekbar_thumb.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\seekbar_thumb.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_pause.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\ic_pause.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_crop_circle.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\ic_crop_circle.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_play.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable\\ic_play.xml"
+    }
+]

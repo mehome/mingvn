@@ -1,0 +1,3 @@
+D:/backup/vxgStreamControl/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/native-lib.dir
+D:/backup/vxgStreamControl/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/backup/vxgStreamControl/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\work\Huawei\Demo\AndroidPlayer\assets"/></dataSet><dataSet config="debug"><source path="D:\work\Huawei\Demo\AndroidPlayer\build-types\debug\assets"/></dataSet></merger>

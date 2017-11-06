@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\build\\intermediates\\res\\merged\\debug\\layout\\gw.xml",
+        "source": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\res\\layout\\gw.xml"
+    },
+    {
+        "merged": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\build\\intermediates\\res\\merged\\debug\\layout\\simplerow.xml",
+        "source": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\res\\layout\\simplerow.xml"
+    },
+    {
+        "merged": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\build\\intermediates\\res\\merged\\debug\\layout\\video.xml",
+        "source": "D:\\work\\Huawei\\Demo\\AndroidPlayer\\res\\layout\\video.xml"
+    }
+]

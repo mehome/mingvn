@@ -1,0 +1,142 @@
+package android.player.detector;
+
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+
+/**
+ * Created by tWX366549 on 2017/2/15.
+ */
+
+public class SocketClient extends Thread {
+    public static final String TAG = "SocketClient";
+
+    private String host;
+    private int port;
+    private Socket socket;
+    private boolean running = true;
+    private Handler handler;
+
+    public SocketClient(Handler handler) {
+        this.handler = handler;
+    }
+
+    public void init(String host, int port) {
+        this.host = host;
+        this.port = port;
+    }
+
+    public void read() throws Exception {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+
+                while (running) {
+                    if (socket != null && socket.isConnected()) {
+
+                        ByteArrayOutputStream bos = null;
+                        InputStream inputStream = null;
+                        try {
+                            inputStream = socket.getInputStream();
+                            if (inputStream.available() == 0) continue;
+                            bos = new ByteArrayOutputStream();
+                            byte[] buf = new byte[1024];
+                            int len = 0;
+                            while ((len = inputStream.read(buf)) > 0) {
+                                bos.write(buf, 0, len);
+                                String result = new String(bos.toByteArray());
+                                Log.e(TAG, "result = " + result);
+                                if (handler != null) {
+                                    Message msg = new Message();
+                                    msg.what = 123;
+                                    msg.obj = result;
+                                    handler.sendMessage(msg);
+                                }
+                                bos.reset();
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } finally {
+                            if (bos != null) {
+                                try {
+                                    bos.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }).start();
+
+    }
+
+    private void alwaysConnect() {
+        while (running) {
+            try {
+                connect();
+            } catch (Exception e) {
+                e.printStackTrace();
+                Log.e(TAG, "disconnected! will connect again after 3s.");
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+                continue;
+            }
+        }
+    }
+
+    boolean status = true;
+
+    private void connect() throws Exception {
+        socket = new Socket(host, port);
+        while (status) {
+            try {
+                socket.sendUrgentData(0xFF);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+                status = false;
+                Log.e(TAG, "disconnect from server");
+            }
+        }
+        throw new Exception("disconnected ! ");
+    }
+
+    public void close() {
+        if (socket != null && socket.isConnected()) {
+            running = false;
+            status = false;
+            try {
+//                socket.getInputStream().close();
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+                Log.e(TAG, "socket close failed!");
+            }
+        }
+    }
+
+
+    @Override
+    public void run() {
+        super.run();
+        alwaysConnect();
+    }
+}

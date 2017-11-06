@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\xml\\app_tracker.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\xml\\app_tracker.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\xml\\settings.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\xml\\settings.xml"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\xml\\global_tracker.xml",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\xml\\global_tracker.xml"
+    }
+]

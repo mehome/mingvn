@@ -1,0 +1,120 @@
+buildscript {
+    repositories {
+        jcenter {
+            url "http://jcenter.bintray.com/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+    }
+}
+
+if (isBuildModle.toBoolean()) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        if (!isBuildModle.toBoolean()) {
+            applicationId "com.huawei.androidVNC"
+            versionCode rootProject.ext.versionCode
+            versionName rootProject.ext.versionName
+        }
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("C:\\Users\\twx366549\\.android\\debug.keystore")
+        }
+
+        release {
+            storeFile file("C:\\Users\\twx366549\\lgu.jks")
+            storePassword "123456"
+            keyAlias "huawei"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+    if (!isBuildModle.toBoolean()) {
+        android.applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (variant.buildType.name.equals('release')) {
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "VNCPlayer_v${defaultConfig.versionName}_${buildTime()}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                } else if (variant.buildType.name.equals('debug')) {
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "VNCPlayer_v${defaultConfig.versionName}_${buildTime()}_debug.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.1.1'
+//    compile files('libs/pldroid-player-1.4.1.jar')
+    compile files('libs/happy-dns-0.2.11.jar')
+    compile(name: 'CircularFloatingActionMenu-1.0.2', ext: 'aar')
+//    compile(name: 'pili-android-qos-0.8.17', ext: 'aar')
+    compile project(':ijkplayer-java')
+//    compile project(':ijkplayer-armv7a')
+//    all32Compile project(':ijkplayer-armv7a')
+//    all64Compile project(':ijkplayer-armv7a')
+//    compile project(':androidvlc')
+}

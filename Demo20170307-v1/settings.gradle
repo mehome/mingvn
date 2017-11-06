@@ -1,0 +1,3 @@
+include ':AndroidPlayer', ':androidVNC', ':dmpplayer', ':VXGPlayer', ':circularFABLibrary'
+include ':ijkplayer-java', ':PLDrdoid', ':PlayerLibrary'
+include ':ijkplayer-armv7a', ':app'

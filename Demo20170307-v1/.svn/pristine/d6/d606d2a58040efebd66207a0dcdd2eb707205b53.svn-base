@@ -1,0 +1,185 @@
+package com.huawei.padresourcepool.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+import com.huawei.padresourcepool.R;
+import com.huawei.padresourcepool.adapter.DetailListAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DetailListActivity extends AppCompatActivity {
+
+    private static final String TAG = "DetailListActivity";
+    private RecyclerView recyclerView;
+    private DetailListAdapter adapter;
+    private SwipeRefreshLayout swipeRefreshLayout;
+
+    private List<String> datas = new ArrayList<>();
+    boolean isLoading;
+    private Handler handler = new Handler();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detail_list);
+
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+
+        //TODO 动态设置title
+        getSupportActionBar().setTitle("拜访云南电信");
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
+        initView();
+
+        initEvent();
+
+        initData();
+
+    }
+
+    private void initData() {
+        getData();
+
+    }
+
+    private void getData(){
+        for (int i = 0; i < 10; i++)
+        {
+            datas.add("" + i);
+        }
+
+        adapter.notifyDataSetChanged();
+        swipeRefreshLayout.setRefreshing(false);
+        adapter.notifyItemRemoved(adapter.getItemCount());
+
+    }
+
+    private void initEvent() {
+
+
+        final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        adapter = new DetailListAdapter(this, datas);
+
+        recyclerView.setAdapter(adapter);
+
+        //item点击事件
+        adapter.setOnItemClickListener(new DetailListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClickListener(View view, int position) {
+                Intent intent = new Intent(DetailListActivity.this, DetailMessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        datas.clear();
+                        getData();
+
+                       // Toast.makeText(DetailListActivity.this, "刷新了一条数据", Toast.LENGTH_SHORT).show();
+
+                    }
+                },1500);
+
+
+            }
+        });
+
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
+                if (lastVisibleItemPosition + 1 == adapter.getItemCount()) {
+
+                    Log.d(TAG, "loading executed");
+
+                    boolean isRefreshing = swipeRefreshLayout.isRefreshing();
+                    if (isRefreshing) {
+                        adapter.notifyItemRemoved(adapter.getItemCount());
+                        return;
+                    }
+                    if (!isLoading) {
+                        isLoading = true;
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                getData();
+                                Log.d(TAG, "load more completed");
+                                isLoading = false;
+                            }
+                        }, 1500);
+                    }
+                }
+
+
+            }
+        });
+
+    }
+
+    private void initView() {
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+        swipeRefreshLayout.setProgressBackgroundColorSchemeResource(android.R.color.white);
+        swipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorPrimary, R.color.colorPrimaryDark);
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.item1:
+                //Toast.makeText(this,"点击了item1",Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}

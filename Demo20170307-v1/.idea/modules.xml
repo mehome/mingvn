@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidPlayer/AndroidPlayer.iml" filepath="$PROJECT_DIR$/AndroidPlayer/AndroidPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo20170307-v1.iml" filepath="$PROJECT_DIR$/Demo20170307-v1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PLDrdoid/PLDrdoid.iml" filepath="$PROJECT_DIR$/PLDrdoid/PLDrdoid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayerLibrary/PlayerLibrary.iml" filepath="$PROJECT_DIR$/PlayerLibrary/PlayerLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VXGPlayer/VXGPlayer.iml" filepath="$PROJECT_DIR$/VXGPlayer/VXGPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidVNC/androidVNC.iml" filepath="$PROJECT_DIR$/androidVNC/androidVNC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularFABLibrary/circularFABLibrary.iml" filepath="$PROJECT_DIR$/circularFABLibrary/circularFABLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dmpplayer/dmpplayer.iml" filepath="$PROJECT_DIR$/dmpplayer/dmpplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-armv7a/ijkplayer-armv7a.iml" filepath="$PROJECT_DIR$/ijkplayer-armv7a/ijkplayer-armv7a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" filepath="$PROJECT_DIR$/ijkplayer-java/ijkplayer-java.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,144 @@
+package com.huawei.padresourcepool.activity;
+
+import android.androidVNC.BitmapImplHint;
+import android.androidVNC.ConnectionBean;
+import android.androidVNC.MostRecentBean;
+import android.androidVNC.VncCanvasActivity;
+import android.androidVNC.VncConstants;
+import android.androidVNC.VncDatabase;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.huawei.padresourcepool.R;
+import com.huawei.padresourcepool.bean.PlayParamesInfo;
+
+public class DetailMessageActivity extends AppCompatActivity implements View.OnClickListener {
+
+    public final static String PLAY_PARAMES_INFO = "PlayParamesInfo";
+
+    private Button btn_start_play;
+    private EditText et_vnc_ip;
+    private EditText et_vnc_port;
+    private EditText et_url;
+    private VncDatabase database;
+    private ConnectionBean connectionBean;
+    SharedPreferences prf;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detail_message);
+
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        prf = getSharedPreferences("config", MODE_PRIVATE);
+        database = new VncDatabase(this);
+        connectionBean = new ConnectionBean();
+        initView();
+        initData();
+        initEvent();
+
+    }
+
+    private void initEvent() {
+        btn_start_play.setOnClickListener(this);
+    }
+
+    private void initData() {
+
+    }
+
+    private void initView() {
+        btn_start_play = (Button) findViewById(R.id.btn_start_play);
+
+        et_vnc_ip = (EditText) findViewById(R.id.et_vnc_ip);
+        et_vnc_port = (EditText) findViewById(R.id.et_vnc_port);
+        et_url = (EditText) findViewById(R.id.et_url);
+        et_vnc_ip.setText(prf.getString("vnc_ip", "172.22.13.10"));
+        et_vnc_port.setText(prf.getString("vnc_port", "5901"));
+        et_url.setText(prf.getString("url", "rtsp://172.22.13.10:5000/screen"));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.item1:
+                //Toast.makeText(this,"点击了item1",Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_start_play:
+
+                String vnc_ip = et_vnc_ip.getText().toString();
+                String vnc_port = et_vnc_port.getText().toString();
+                String url = et_url.getText().toString();
+                if (TextUtils.isEmpty(vnc_ip) || TextUtils.isEmpty(vnc_port) || TextUtils.isEmpty(url)) {
+                    Toast.makeText(DetailMessageActivity.this, "参数不能为空", Toast.LENGTH_SHORT).show();
+                } else {
+                    startVnc(vnc_ip, vnc_port, url);
+//                    PlayParamesInfo playParamesInfo = new PlayParamesInfo(vnc_ip, vnc_port, url);
+//                    Intent intent = new Intent(DetailMessageActivity.this, DetailContentActivity.class);
+//                    intent.putExtra(PLAY_PARAMES_INFO, playParamesInfo);
+//                    startActivity(intent);
+                }
+                break;
+        }
+    }
+
+    private void startVnc(String vnc_ip, String vnc_port, String url) {
+        prf.edit().putString("vnc_ip", vnc_ip).apply();
+        prf.edit().putString("vnc_port", vnc_port).apply();
+        prf.edit().putString("url", url).apply();
+        connectionBean.setAddress(vnc_ip);
+        connectionBean.setForceFull(BitmapImplHint.AUTO);
+        connectionBean.setPort(Integer.parseInt(vnc_port));
+        saveAndWriteRecent();
+        Intent intent = new Intent(this, VncCanvasActivity.class);
+        intent.putExtra(VncConstants.CONNECTION, connectionBean.Gen_getValues());
+        intent.putExtra("videoPath", url);
+        intent.putExtra("proto", 1);
+        startActivity(intent);
+    }
+
+    private void saveAndWriteRecent() {
+        SQLiteDatabase db = database.getWritableDatabase();
+        db.beginTransaction();
+        try {
+            connectionBean.save(db);
+            db.setTransactionSuccessful();
+        } finally {
+            db.endTransaction();
+        }
+    }
+}

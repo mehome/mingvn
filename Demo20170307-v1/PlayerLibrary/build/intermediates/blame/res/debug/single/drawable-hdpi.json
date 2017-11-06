@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\seekbar_thumb_pressed.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\seekbar_thumb_pressed.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_pause_pressed_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_pause_pressed_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_lock.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_lock.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_forward_pressed_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_forward_pressed_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_pause_normal_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_pause_normal_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_crop_circle_normal.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_crop_circle_normal.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_forward_normal_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_forward_normal_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_play_normal_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_play_normal_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_crop_circle_pressed.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_crop_circle_pressed.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_backward_pressed_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_backward_pressed_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_backward_normal_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_backward_normal_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_locked.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_locked.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_play_pressed_w.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\ic_play_pressed_w.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\seekbar_thumb_normal.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\PlayerLibrary\\res\\drawable-hdpi\\seekbar_thumb_normal.png"
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_theme_play_arrow.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_theme_play_arrow.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_keyboard.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_keyboard.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_down.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_down.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\icon.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\drawable-ldpi-v4\\icon.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_theme_folder.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_theme_folder.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_keyboard.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_keyboard.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\app.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\drawable-ldpi-v4\\app.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_theme_description.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_theme_description.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_right.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_right.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_dark_filter.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_dark_filter.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_up.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_up.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_dark_settings.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_dark_settings.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_dark_aspect_ratio.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_dark_aspect_ratio.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_menu_moreoverflow_normal_holo_light.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_menu_moreoverflow_normal_holo_light.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\exploded-aar\\Demo20170307-v1\\VXGPlayer\\unspecified\\res\\drawable-ldpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_left.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_left.png"
+    },
+    {
+        "merged": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\ic_action_keypad.png",
+        "source": "D:\\code\\android_as\\Demo20170307-v1\\androidVNC\\res\\drawable-ldpi\\ic_action_keypad.png"
+    }
+]

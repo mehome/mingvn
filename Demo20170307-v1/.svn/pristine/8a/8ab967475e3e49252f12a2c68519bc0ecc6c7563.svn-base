@@ -1,0 +1,91 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:2:1-54:12
+	package
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:3:5-29
+	android:versionName
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:5:5-30
+		INJECTED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml
+		INJECTED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:4:5-28
+		INJECTED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml
+		INJECTED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:7:5-35:19
+	android:label
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:7:18-50
+activity#org.libsdl.app.ListViewActivity
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:9:9-18:20
+	android:process
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:12:13-44
+	android:label
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:11:13-36
+	android:windowSoftInputMode
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:13:13-64
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:10:13-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:14:13-17:29
+action#android.intent.action.MAIN
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:16:27-74
+activity#org.libsdl.app.SDLActivity
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:20:9-25:73
+	android:process
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:24:13-43
+	android:label
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:23:13-33
+	android:configChanges
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:22:13-74
+	android:theme
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:25:13-71
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:21:13-39
+activity#org.libsdl.app.GatewayClient
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:27:9-34:20
+	android:label
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:29:13-31
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:28:13-41
+uses-sdk
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:38:5-40:41
+	android:targetSdkVersion
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:40:9-38
+	android:minSdkVersion
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:39:9-35
+uses-feature#0x00020000
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:43:5-54
+	android:glEsVersion
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:43:19-51
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:46:5-81
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:46:22-78
+uses-permission#android.permission.INTERNET
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:47:5-67
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:47:22-64
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:50:5-84
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:50:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:51:5-79
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:51:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:52:5-76
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:52:22-73
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:53:5-86
+	android:name
+		ADDED from D:\work\Huawei\Demo\AndroidPlayer\AndroidManifest.xml:53:22-83

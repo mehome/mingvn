@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\code\android_as\Demo20170307-v1\androidVNC\assets"/><source path="D:\code\android_as\Demo20170307-v1\androidVNC\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\code\android_as\Demo20170307-v1\androidVNC\build-types\release\assets"/></dataSet></merger>
